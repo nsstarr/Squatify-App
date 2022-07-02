@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const InsightElement = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+const InsightElement = (props) => {
+  return (
+    <div className="insight-elements">
+      <div>{props.children}</div>
+    </div>
+  );
+};
 
-export default InsightElement
+export default InsightElement;

@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import InsightElement from "../Insight Element/InsightElement";
 
 const Insight = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <div>
+      <InsightElement>Squats today</InsightElement>
+      <InsightElement>Squats this week: total</InsightElement>
+      <InsightElement>Squats this week: average</InsightElement>
+    </div>
+  );
+};
 
-export default Insight
+export default Insight;
