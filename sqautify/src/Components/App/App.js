@@ -9,6 +9,7 @@ function App() {
       <Header />
       <Input />
       <Insight />
+  
     </div>
   );
 }
