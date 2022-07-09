@@ -3,12 +3,20 @@ import React from "react";
 import Button from "../Button/Button";
 import styled from "styled-components";
 
-//Inputcontainer is a div at the moment. We may need to change it
-//to form for submit logic to work
-const InputContainer = styled.div`
+// Inputcontainer is a div at the moment. We may need to change it
+// to form for submit logic to work
+const InputFieldContainer = styled.div`
   display: flex;
-  flexdirection: row;
+  flex-direction: column;
+
 `;
+
+// const InputContainer = styled.div`
+// display: flex;
+// flex-direction: : column;
+// background-color: red;
+// color: yellow;
+// `;
 
 const InputStyle = styled.input`
   width: 7em;
@@ -24,21 +32,29 @@ const InputStyle = styled.input`
   line-height: 24px;
 `;
 
+const h3Container = styled.div`
+display: flex;
+flex-direction: row;
+`
+
 const Input = () => {
   return (
-    <InputContainer>
+    <InputFieldContainer>
       <InputField />
       <Button>SUBMIT</Button>
-    </InputContainer>
-  );
+    </InputFieldContainer>
+
+);
 };
+
+
 
 const InputField = () => {
   return (
-    <div>
+    <h3Container>
       <h3>How many squats did you do today?</h3>
       <InputStyle type="text" className="input" />
-    </div>
+    </h3Container>
   );
 };
 
