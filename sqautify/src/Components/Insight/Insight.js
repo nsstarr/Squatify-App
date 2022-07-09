@@ -10,5 +10,5 @@ const Insight = () => {
     </div>
   );
 };
-
+//Comment
 export default Insight;
