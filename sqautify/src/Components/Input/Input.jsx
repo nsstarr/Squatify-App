@@ -48,13 +48,13 @@ const Input = () => {
   );
 };
 
-// const InputField = () => {
-//   return (
-//     <h3Container>
-//       <h3>How many squats did you do today?</h3>
-//       <Input />
-//     </h3Container>
-//   );
-// };
+const InputField = () => {
+  return (
+    <h3Container>
+      <h3>How many squats did you do today?</h3>
+      <Input />
+    </h3Container>
+  );
+};
 
-export default Input;
+export default InputField;
