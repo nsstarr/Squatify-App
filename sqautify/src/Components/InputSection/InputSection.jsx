@@ -1,17 +1,7 @@
 import React from "react";
-// import InputField from "../Input Field/InputField";
+
 import Button from "../Button/Button";
 import styled from "styled-components";
-
-// Inputcontainer is a div at the moment. We may need to change it
-// to form for submit logic to work
-
-// const InputContainer = styled.div`
-// display: flex;
-// flex-direction: : column;
-// background-color: red;
-// color: yellow;
-// `;
 
 const TextBox = styled.input`
   width: 7em;
@@ -27,11 +17,6 @@ const TextBox = styled.input`
   line-height: 24px;
 `;
 
-// const h3Container = styled.div`
-//   display: flex;
-//   flex-direction: row;
-// `;
-
 const InputFieldContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -39,7 +24,7 @@ const InputFieldContainer = styled.div`
   justify-content: center;
 `;
 
-const Input = () => {
+const InputForm = () => {
   return (
     <InputFieldContainer>
       <TextBox type="text" className="input" />
@@ -48,13 +33,13 @@ const Input = () => {
   );
 };
 
-const InputField = () => {
+const InputSection = () => {
   return (
     <h3Container>
       <h3>How many squats did you do today?</h3>
-      <Input />
+      <InputForm />
     </h3Container>
   );
 };
 
-export default InputField;
+export default InputSection;
