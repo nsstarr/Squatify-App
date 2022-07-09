@@ -5,11 +5,6 @@ import styled from "styled-components";
 
 // Inputcontainer is a div at the moment. We may need to change it
 // to form for submit logic to work
-const InputFieldContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-
-`;
 
 // const InputContainer = styled.div`
 // display: flex;
@@ -18,7 +13,7 @@ const InputFieldContainer = styled.div`
 // color: yellow;
 // `;
 
-const InputStyle = styled.input`
+const TextBox = styled.input`
   width: 7em;
   height: 1.5em;
   left: 439px;
@@ -32,30 +27,34 @@ const InputStyle = styled.input`
   line-height: 24px;
 `;
 
-const h3Container = styled.div`
-display: flex;
-flex-direction: row;
-`
+// const h3Container = styled.div`
+//   display: flex;
+//   flex-direction: row;
+// `;
+
+const InputFieldContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
 
 const Input = () => {
   return (
     <InputFieldContainer>
-      <InputField />
+      <TextBox type="text" className="input" />
       <Button>SUBMIT</Button>
     </InputFieldContainer>
-
-);
-};
-
-
-
-const InputField = () => {
-  return (
-    <h3Container>
-      <h3>How many squats did you do today?</h3>
-      <InputStyle type="text" className="input" />
-    </h3Container>
   );
 };
+
+// const InputField = () => {
+//   return (
+//     <h3Container>
+//       <h3>How many squats did you do today?</h3>
+//       <Input />
+//     </h3Container>
+//   );
+// };
 
 export default Input;
