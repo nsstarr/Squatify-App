@@ -1,5 +1,14 @@
 import React from "react";
+// import InputField from "../Input Field/InputField";
+import Button from "../Button/Button";
 import styled from "styled-components";
+
+//Inputcontainer is a div at the moment. We may need to change it
+//to form for submit logic to work
+const InputContainer = styled.div`
+  display: flex;
+  flexdirection: row;
+`;
 
 const InputStyle = styled.input`
   width: 7em;
@@ -15,6 +24,15 @@ const InputStyle = styled.input`
   line-height: 24px;
 `;
 
+const Input = () => {
+  return (
+    <InputContainer>
+      <InputField />
+      <Button>SUBMIT</Button>
+    </InputContainer>
+  );
+};
+
 const InputField = () => {
   return (
     <div>
@@ -24,4 +42,4 @@ const InputField = () => {
   );
 };
 
-export default InputField;
+export default Input;
