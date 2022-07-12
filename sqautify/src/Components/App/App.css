@@ -8,6 +8,22 @@
 .App {
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* min-height: 100vh; */
+}
+
+h1 { 
+  font-size: 5em;
+  letter-spacing: 0.05em;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: normal;
 }
 
 /*

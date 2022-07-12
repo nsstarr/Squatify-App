@@ -5,9 +5,8 @@ const InsightTitle = styled.div`
   font-size: 16px;
   width: 3em;
   height: 3em;
-
   ${"" /* position: absolute; */}
-
+  margin-bottom: 2em;
   color: #1ed760;
 `;
 
@@ -39,7 +38,8 @@ const InsightCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: space-between;
+  ${'' /* margin-left: 4em */}
 `;
 
 //font weight
