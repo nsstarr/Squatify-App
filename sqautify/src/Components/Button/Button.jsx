@@ -20,7 +20,9 @@ const SubmitButton = styled.button`
 const Button = (props) => {
   return (
     <div>
-      <SubmitButton className="submit">{props.children}</SubmitButton>
+      <SubmitButton onClick={props.addSquats} className="submit">
+        {props.children}
+      </SubmitButton>
     </div>
   );
 };

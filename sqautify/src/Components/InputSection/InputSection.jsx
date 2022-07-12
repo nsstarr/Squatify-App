@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 import Button from "../Button/Button";
 import styled from "styled-components";
@@ -25,10 +26,29 @@ const InputFieldContainer = styled.div`
 `;
 
 const InputForm = () => {
+  const [text, setText] = useState("");
+
+  function textChange(e) {
+    setText(e.target.value);
+  }
+  console.log(text);
+
+  const addSquats = async function (e) {
+    e.preventDefault();
+
+    const response = await fetch("http://localhost:3000/squatLog", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ no_squats: text }),
+    });
+    const data = await response.json();
+    console.log(data);
+  };
+
   return (
     <InputFieldContainer>
-      <TextBox type="text" className="input" />
-      <Button>SUBMIT</Button>
+      <TextBox onChange={textChange} type="text" className="input" />
+      <Button addSquats={addSquats}>SUBMIT</Button>
     </InputFieldContainer>
   );
 };
