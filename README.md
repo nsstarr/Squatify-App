@@ -1,1 +1,1 @@
-# -100DaysOfSquats-App
+# Squatify
