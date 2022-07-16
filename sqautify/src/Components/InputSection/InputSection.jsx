@@ -25,7 +25,7 @@ const InputFieldContainer = styled.div`
   justify-content: space-evenly;
 `;
 
-const InputForm = () => {
+const InputForm = ({ handleTrigger }) => {
   const [text, setText] = useState("");
 
   function textChange(e) {
@@ -34,7 +34,7 @@ const InputForm = () => {
   console.log(text);
 
   const addSquats = async function (e) {
-    e.preventDefault();
+    // e.preventDefault();
 
     const response = await fetch("http://localhost:3000/squatLog", {
       method: "POST",
@@ -48,16 +48,18 @@ const InputForm = () => {
   return (
     <InputFieldContainer>
       <TextBox onChange={textChange} type="text" className="input" />
-      <Button addSquats={addSquats}>SUBMIT</Button>
+      <Button addSquats={addSquats} handleTrigger={handleTrigger}>
+        SUBMIT
+      </Button>
     </InputFieldContainer>
   );
 };
 
-const InputSection = () => {
+const InputSection = ({ handleTrigger }) => {
   return (
     <h3Container>
       <h3>How many squats did you do today?</h3>
-      <InputForm />
+      <InputForm handleTrigger={handleTrigger} />
     </h3Container>
   );
 };

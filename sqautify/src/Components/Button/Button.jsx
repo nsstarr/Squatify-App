@@ -17,11 +17,15 @@ const SubmitButton = styled.button`
   line-height: 24px;
 `;
 
-const Button = (props) => {
+const Button = ({ children, addSquats, handleTrigger }) => {
+  function handleClick() {
+    addSquats();
+    handleTrigger();
+  }
   return (
     <div>
-      <SubmitButton onClick={props.addSquats} className="submit">
-        {props.children}
+      <SubmitButton onClick={handleClick} className="submit">
+        {children}
       </SubmitButton>
     </div>
   );
