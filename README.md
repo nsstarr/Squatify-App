@@ -9,7 +9,7 @@ As students of the School of Code, we created this app as an nod to this traditi
 
 ## See It Live
 
-https://squatify.netlify.app/
+Click this link to test the app. https://squatify.netlify.app/
 ## Installation
 
 First clone the frontend and backend repositories.
