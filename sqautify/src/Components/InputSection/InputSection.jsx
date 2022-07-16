@@ -36,11 +36,14 @@ const InputForm = ({ handleTrigger }) => {
   const addSquats = async function (e) {
     // e.preventDefault();
 
-    const response = await fetch("http://localhost:3000/squatLog", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ no_squats: text }),
-    });
+    const response = await fetch(
+      `${process.env.REACT_APP_DATABASE_URL}/squatLog`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ no_squats: text }),
+      }
+    );
     const data = await response.json();
     console.log(data);
   };

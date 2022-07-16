@@ -20,7 +20,9 @@ const Insight = ({ trigger }) => {
 
   useEffect(() => {
     const getStats = async function () {
-      const response = await fetch("http://localhost:3000/squatLog");
+      const response = await fetch(
+        `${process.env.REACT_APP_DATABASE_URL}/squatLog`
+      );
       const data = await response.json();
 
       // console.log(data);
