@@ -47,13 +47,13 @@ const Insight = ({ trigger }) => {
 
   return (
     <InsightRow>
-      <InsightElement title="squats today" number={stats.squatsToday} />
+      <InsightElement title="Squats Today" number={stats.squatsToday} />
       <InsightElement
-        title="Squats this week: total"
+        title="Total Squats"
         number={stats.squatsThisWeekTotal}
       />
       <InsightElement
-        title="Squats this week: average"
+        title="Daily Average"
         number={stats.squatsThisWeekAverage}
       />
     </InsightRow>
