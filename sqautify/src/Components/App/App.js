@@ -8,12 +8,14 @@ function App() {
   const [trigger, setTrigger] = useState(false);
   function callSetTrigger() {
     setTrigger(!trigger);
+    console.log(`this is the trigger: ${trigger}`);
   }
+
   return (
     <div className="App">
       <Header />
       <InputSection handleTrigger={callSetTrigger} />
-      <Insight />
+      <Insight trigger={trigger} />
     </div>
   );
 }

@@ -34,7 +34,7 @@ const InputForm = ({ handleTrigger }) => {
   console.log(text);
 
   const addSquats = async function (e) {
-    e.preventDefault();
+    // e.preventDefault();
 
     const response = await fetch("http://localhost:3000/squatLog", {
       method: "POST",

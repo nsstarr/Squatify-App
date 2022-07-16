@@ -11,7 +11,7 @@ const InsightRow = styled.div`
   margin-top: 2em;
 `;
 
-const Insight = () => {
+const Insight = ({ trigger }) => {
   const [stats, setStats] = useState({
     squatsToday: 0,
     squatsThisWeekTotal: 0,
@@ -43,7 +43,7 @@ const Insight = () => {
     };
 
     getStats();
-  }, []);
+  }, [trigger]);
 
   return (
     <InsightRow>
