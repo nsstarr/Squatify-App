@@ -1,14 +1,14 @@
 import React from "react";
 
+// DarkMode button is a future implementation (currently not in use)
 
-//Styling to be added 
 const DarkMode = () => {
   return (
     <div className="dark-mode">
-    <label class="switch">
-    <input type="checkbox"></input>
-    <span class="slider round"></span>
-    </label>
+      {/* <label class="switch">
+        <input type="checkbox"></input>
+        <span class="slider round"></span>
+      </label> */}
     </div>
   );
 };

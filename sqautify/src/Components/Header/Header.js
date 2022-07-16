@@ -5,7 +5,10 @@ const Header = () => {
   return (
     <div className="header">
       <img src="" alt="" className="logo" />
-      <h1>SQUATIFY</h1>
+      <h1>
+        <img src="images/squatify_logo.png" height="75px" width="75px" />{" "}
+        SQUATIFY
+      </h1>
       <h3>The only squat tracker you need.</h3>
       <DarkMode />
     </div>

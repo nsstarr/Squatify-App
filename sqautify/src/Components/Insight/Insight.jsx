@@ -8,7 +8,7 @@ const InsightRow = styled.div`
   align-items: center;
   justify-content: space-evenly;
   width: 60%;
-  margin-top: 2em;
+  margin-top: 4em;
 `;
 
 const Insight = ({ trigger }) => {
@@ -50,10 +50,7 @@ const Insight = ({ trigger }) => {
   return (
     <InsightRow>
       <InsightElement title="Squats Today" number={stats.squatsToday} />
-      <InsightElement
-        title="Total Squats"
-        number={stats.squatsThisWeekTotal}
-      />
+      <InsightElement title="Total Squats" number={stats.squatsThisWeekTotal} />
       <InsightElement
         title="Daily Average"
         number={stats.squatsThisWeekAverage}

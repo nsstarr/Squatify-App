@@ -16,13 +16,14 @@ const TextBox = styled.input`
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin-right: 0.5em;
 `;
 
 const InputFieldContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 `;
 
 const InputForm = ({ handleTrigger }) => {
