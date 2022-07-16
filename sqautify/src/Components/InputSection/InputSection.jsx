@@ -46,11 +46,17 @@ const InputForm = ({ handleTrigger }) => {
     );
     const data = await response.json();
     console.log(data);
+    setText("");
   };
 
   return (
     <InputFieldContainer>
-      <TextBox onChange={textChange} type="text" className="input" />
+      <TextBox
+        value={text}
+        onChange={textChange}
+        type="text"
+        className="input"
+      />
       <Button addSquats={addSquats} handleTrigger={handleTrigger}>
         SUBMIT
       </Button>
