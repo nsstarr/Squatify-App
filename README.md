@@ -66,10 +66,9 @@ Our ability to work with React and deploy full stack applications has become mor
 
 - [styled components](https://styled-components.com/docs)
 - [How to Solve the Infinite Loop of React.useEffect()](https://dmitripavlutin.com/react-useeffect-infinite-loop/)
+- [Media Queries](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 
 ## Authors
-
-- [Media Queries](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 
 - [@anastasia-starostina](https://www.github.com/anastasia-starostina)
 - [@BlakeLawrence](https://www.github.com/BlakeLawrence)
