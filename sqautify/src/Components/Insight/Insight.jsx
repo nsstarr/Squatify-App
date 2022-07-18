@@ -9,6 +9,13 @@ const InsightRow = styled.div`
   justify-content: space-evenly;
   width: 60%;
   margin-top: 6em;
+  @media only screen and (max-width: 500px) {
+     {
+      flex-direction: column;
+      margin-top: 5em;
+      gap: 1.5em;
+    }
+  }
 `;
 
 const Insight = ({ trigger }) => {
@@ -39,7 +46,7 @@ const Insight = ({ trigger }) => {
         2
       );
 
-      console.log({ squatsToday, squatsThisWeekTotal, squatsThisWeekAverage })
+      console.log({ squatsToday, squatsThisWeekTotal, squatsThisWeekAverage });
 
       setStats({ squatsToday, squatsThisWeekTotal, squatsThisWeekAverage });
     };
