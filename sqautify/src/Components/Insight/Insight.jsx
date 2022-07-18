@@ -13,6 +13,7 @@ const InsightRow = styled.div`
      {
       flex-direction: column;
       margin-top: 5em;
+      margin-bottom: 25px;
       gap: 1.5em;
     }
   }
