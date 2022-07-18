@@ -47,12 +47,17 @@ const InputForm = ({ handleTrigger }) => {
     console.log(typeof(text));
     // e.preventDefault();
 
+    if (!/^\d+$/.test(text)) {
+      alert("Enter a positive whole number only (make sure the input does not contain any whitespace).")
+      return;
+    }
+
     const response = await fetch(
       `${process.env.REACT_APP_DATABASE_URL}/squatLog`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ no_squats: text }),
+        body: JSON.stringify({ no_squats: (text) }),
       }
     );
     const data = await response.json();
