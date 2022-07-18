@@ -32,7 +32,6 @@ const InputForm = ({ handleTrigger }) => {
   function textChange(e) {
     setText(e.target.value);
   }
-  console.log(text);
 
   const addSquats = async function (e) {
     // e.preventDefault();
@@ -48,6 +47,7 @@ const InputForm = ({ handleTrigger }) => {
     const data = await response.json();
     console.log(data);
     setText("");
+    handleTrigger();
   };
 
   return (

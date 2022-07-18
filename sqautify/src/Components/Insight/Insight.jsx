@@ -39,7 +39,7 @@ const Insight = ({ trigger }) => {
         2
       );
 
-      // console.log({ squatsToday, squatsThisWeekTotal, squatsThisWeekAverage })
+      console.log({ squatsToday, squatsThisWeekTotal, squatsThisWeekAverage })
 
       setStats({ squatsToday, squatsThisWeekTotal, squatsThisWeekAverage });
     };

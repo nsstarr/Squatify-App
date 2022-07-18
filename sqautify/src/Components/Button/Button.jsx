@@ -20,7 +20,7 @@ const SubmitButton = styled.button`
 const Button = ({ children, addSquats, handleTrigger }) => {
   function handleClick() {
     addSquats();
-    handleTrigger();
+    // handleTrigger();
   }
   return (
     <div>
