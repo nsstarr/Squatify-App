@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const SubmitButton = styled.button`
-  width: 7em;
+  width: 6em;
   height: 2.5em;
   left: 439px;
   top: 293px;

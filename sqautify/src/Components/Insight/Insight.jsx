@@ -8,7 +8,7 @@ const InsightRow = styled.div`
   align-items: center;
   justify-content: space-evenly;
   width: 60%;
-  margin-top: 4em;
+  margin-top: 6em;
 `;
 
 const Insight = ({ trigger }) => {

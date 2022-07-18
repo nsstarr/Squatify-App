@@ -19,6 +19,14 @@ h1 {
   font-size: 5em;
   letter-spacing: 0.05em;
   font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 550px;
+  /* text-shadow: 2px 2px #1ED760; */
+  /* text-shadow: #1ED760 0px 10px 36px 0px, #1ED760 0px 0px 0px 1px; */
+  /* box-shadow: 3px 3px 10px 1px rgb(0, 0, 0, 0.4); */
+  text-shadow: rgba(30, 215, 96, 0.6) 0px 3px 3px;
 }
 
 h3 {

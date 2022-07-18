@@ -9,7 +9,7 @@ const Header = () => {
         <img src="images/squatify_logo.png" height="75px" width="75px" alt="Squatify-Logo" />{" "}
         SQUATIFY
       </h1>
-      <h3>The only squat tracker you need.</h3>
+      <h4 Style="font-style: italic; font-size: 1.5em">The only squat tracker you need</h4>
       <DarkMode />
     </div>
   );

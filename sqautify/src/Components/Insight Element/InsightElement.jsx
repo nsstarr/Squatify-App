@@ -3,10 +3,11 @@ import styled from "styled-components";
 
 const InsightTitle = styled.div`
   font-size: 16px;
-  width: 3em;
+  font-weight: 600;
+  width: 100%;
   height: 3em;
   ${"" /* position: absolute; */}
-  margin-bottom: 2em;
+  margin-bottom: -0.5em;
   color: #1ed760;
 `;
 
@@ -22,6 +23,7 @@ const InsightCircle = styled.div`
   justify-content: center;
   align-items: center;
   padding:5px;
+  box-shadow: 3px 3px 10px 1px rgb(0, 0, 0, 0.4);
 `;
 
 const InsightNumber = styled.div`
